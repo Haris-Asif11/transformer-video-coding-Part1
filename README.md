@@ -41,10 +41,10 @@ in the original (uncompressed) validation images.
 Experimental results: PSNR, BPP (Image), BPP (VCT) and wAP for different
 values of λ2.
 
-![](docs/DR Curve.png)
+![](docs/DR_Curve.png)
 Rate–Distortion (RD) curve showing PSNR versus BPP for the image-based and the video-based VCT compression model.
 
-![](docs/AP Curve.png)
+![](docs/AP_Curve.png)
 Curve showing weighted Average Precision versus BPP for the image-based and the video-based VCT compression model.
 
 # Additional Info:
