@@ -49,3 +49,18 @@ Curve showing weighted Average Precision versus BPP for the image-based and the 
 
 # Additional Info:
 If you need any checkpoint file, please email me at: harisasif64@gmail.com
+
+# Acknowledgments
+This project builds on ideas and code from [Detectron2](https://github.com/facebookresearch/detectron2)  
+by Yuxin Wu, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick (Apache-2.0 License).
+
+If you use this project in academic work, please also cite Detectron2:
+
+```bibtex
+@misc{wu2019detectron2,
+  author =       {Yuxin Wu and Alexander Kirillov and Francisco Massa and
+                  Wan-Yen Lo and Ross Girshick},
+  title =        {detectron2},
+  howpublished = {\url{https://github.com/facebookresearch/detectron2}},
+  year =         {2019}
+}
