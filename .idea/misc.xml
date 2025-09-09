@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="detectron2" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="detectron2" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="detect2_env_2" project-jdk-type="Python SDK" />
 </project>

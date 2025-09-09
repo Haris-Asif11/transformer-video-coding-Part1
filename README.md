@@ -11,7 +11,7 @@ compressAI package is also required.
 
 # How to run
 
-The project uses the Cityscapes dataset. Use main4.py to launch the training loop. You don't have to register the Cityscapes dataset, as the train and validation pickle files are already generated from the Cityscapes dataset and provided here.
+The project uses the Cityscapes dataset. Use _main.py_ to launch the training loop. You don't have to register the Cityscapes dataset, as the train and validation pickle files are already generated from the Cityscapes dataset and provided here.
 
 Within main.py, you can alter _self.lambda_rate_ (decrease for increased image quality but worse rate). You do not need to change the _self.alpha_rate_ as it was set empirically.
 
@@ -19,11 +19,11 @@ Finally, select your output directory using: _cfg.OUTPUT_DIR_ and let the traini
 
 # Testing
 
-Use single_inference.py to visualize the result from the trained network on provided path to image. You have to provide the checkpoint path in _checkpoint_path_. This contains the trained weights of the model from running main.py. Provide the path to the test image in _image_path_.
+Use _single_inference.py_ to visualize the result from the trained network on provided path to image. You have to provide the checkpoint path in _checkpoint_path_. This contains the trained weights of the model from running _main.py_. Provide the path to the test image in _image_path_.
 
-Use complete_inference.py to run inference of the trained model on the whole cityscapes validation set. It will output the decompressed images in a new directory set in _output_dir_. The path to the cityscapes validation set must be provided in _input_dir_. The script will also give you the average PSNR and average BPP values accumulated from all 500 images in the validation set.
+Use _complete_inference.py_ to run inference of the trained model on the whole cityscapes validation set. It will output the decompressed images in a new directory set in _output_dir_. The path to the cityscapes validation set must be provided in _input_dir_. The script will also give you the average PSNR and average BPP values accumulated from all 500 images in the validation set.
 
-Use eval_cityscapes.py to test segmentation results on the decompressed images. Add the path to the decompressed images folder (from test5.py) in _"--source"_. Add path to Cityscapes dataset ground truth in _"--gt-path"_. The script will evaluate the Mask-RCNN on the decompressed images and give you the AP values.
+Use eval_cityscapes.py to test segmentation results on the decompressed images. Add the path to the decompressed images folder (from _complete_inference.py_) in _"--source"_. Add path to Cityscapes dataset ground truth in _"--gt-path"_. The script will evaluate the Mask-RCNN on the decompressed images and give you the AP values.
 
 # Results
 The results shown below are from both _transformer-video-coding-Part1_ and _transformer-video-coding-Part2_:
